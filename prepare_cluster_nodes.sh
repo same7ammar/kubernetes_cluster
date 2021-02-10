@@ -9,8 +9,6 @@ deb https://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 sudo swapoff -a
-sudo apt-transport-https curl -y
-sudo apt -y install vim git curl wget kubelet kubeadm kubectl
 
 echo "Updates packages ....."
 sudo apt update -y
