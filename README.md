@@ -29,3 +29,13 @@ chmod a+x *.sh
 kubeadm join 10.0.1.101:6443 --token g4cmo8.a61uneidlpvr8ebd     --discovery-token-ca-cert-hash sha256:f4000a9db2c7141d9625e78cdaf1563f09b7048c6c8d5f55d517392d5a1fdb8d
 
 ```
+
+# Etcd backup and restore .
+```bash
+./etcd_backup.sh > etcd.backup 
+
+```
+
+```bash
+cat etcd.backup |  ./etcd_resore.sh 
+```
