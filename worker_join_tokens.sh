@@ -1,4 +1,3 @@
-
 #!/bin/bash
 echo "Listing All tokens ......"
 kubeadm tokens list
